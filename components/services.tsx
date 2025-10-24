@@ -23,31 +23,27 @@ export function Services() {
       gradient: "from-blue-500 to-purple-600",
     },
     {
-      title: "Design",
-      icon: "🎨",
+      title: "Liderança",
+      icon: "👑",
       items: [
-        "Design premiado",
-        "Prototipagem rápida",
-        "Pesquisa extensiva de usuários",
-        "Testes de usabilidade",
-        "Arquitetura de informação",
-        "Design de interação",
-        "Design de marca",
-        "Motion design",
+        "Liderança de equipe",
+        "Liderança de projeto",
+        "Liderança de produto",
+        "Liderança de negócio",
       ],
       ref: grid2Ref,
       isVisible: grid2Visible,
       gradient: "from-pink-500 to-red-600",
     },
     {
-      title: "Tecnologia",
+      title: "Planejamento",
       icon: "💻",
       items: [
         "Planejamento de arquitetura",
-        "Desenvolvimento web & mobile",
-        "Desenvolvimento de API & CMS",
-        "Machine learning",
-        "Realidade aumentada",
+        "Planejamento de produto",
+        "Planejamento de negócio",
+        "Planejamento de marketing",
+        "Planejamento de vendas",
       ],
       ref: grid3Ref,
       isVisible: grid3Visible,
@@ -75,9 +71,7 @@ export function Services() {
             O que fazemos
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-4xl text-pretty leading-relaxed">
-            Somos uma equipe experiente de designers e desenvolvedores de produtos que adoram colaborar com nossos clientes —
-            é a melhor maneira de ter sucesso no desenvolvimento de produtos no mercado digital de hoje. Ajudamos nossos clientes
-            a entender, desenvolver e posicionar seus produtos enquanto resolvemos as dores de seus usuários.
+          Inspirada pela missão de ser oxigênio para líderes, criamos o conceito Liderança Oxigênio para ajudar profissionais a transformar suas jornadas de liderança e conectar seus propósitos. Aqui você encontra os links principais para participar do Movimento MARES, acessar conteúdos exclusivos e mergulhar nas minhas iniciativas de desenvolvimento de líderes.
           </p>
         </div>
 

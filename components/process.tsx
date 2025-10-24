@@ -8,10 +8,10 @@ export function Process() {
   const { ref: cyclesRef, isVisible: cyclesVisible } = useScrollReveal<HTMLDivElement>({ threshold: 0.3 })
 
   const steps = [
-    { title: "Discover", subtitle: "Ideas and research" },
-    { title: "Define", subtitle: "Focus and refinement" },
-    { title: "Develop", subtitle: "Concepts and proposals" },
-    { title: "Deliver", subtitle: "Solution and evaluation" },
+    { title: "Descoberta", subtitle: "Descoberta de ideias e pesquisa" },
+    { title: "Definição", subtitle: "Definição de foco e refinamento" },
+    { title: "Desenvolvimento", subtitle: "Desenvolvimento de conceitos e propostas" },
+    { title: "Entrega", subtitle: "Entrega de soluções e avaliação" },
   ]
 
   return (
@@ -24,11 +24,9 @@ export function Process() {
           }`}
         >
           <span className="text-6xl md:text-8xl font-bold text-muted-foreground/20">02</span>
-          <h2 className="text-4xl md:text-6xl font-bold mt-4 mb-8 text-balance">How we work</h2>
+          <h2 className="text-4xl md:text-6xl font-bold mt-4 mb-8 text-balance">Como trabalhamos</h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-4xl text-pretty leading-relaxed">
-            Successful products come from successful partnerships. We include our clients in each step of building their
-            product, from beginning to end. This engagement keeps both sides involved and keeps the team spirit creative
-            and committed.
+            Cada projeto é uma oportunidade para criar algo extraordinário. Nossa equipe trabalha em estreita colaboração com você para entender suas necessidades, criar soluções inovadoras e entregar resultados que superam expectativas.
           </p>
         </div>
 
@@ -69,19 +67,17 @@ export function Process() {
           }`}
         >
           <div className="flex items-start gap-4 mb-6">
-            <span className="text-xs font-bold text-muted-foreground">PROBLEM</span>
+            <span className="text-xs font-bold text-muted-foreground">Problema</span>
             <span className="text-xs font-bold text-muted-foreground">→</span>
-            <span className="text-xs font-bold text-muted-foreground">SOLUTION</span>
+            <span className="text-xs font-bold text-muted-foreground">Solução</span>
           </div>
           <h3 className="text-3xl font-bold mb-6">FAST CYCLES</h3>
           <p className="text-muted-foreground leading-relaxed max-w-3xl">
-            Getting early user and client feedback is critical. Without feedback, validating new business ideas and
-            making informed product decisions becomes expensive and complicated and makes scaling a product more
-            difficult than it needs to be.
+            Obter feedback precoce do usuário e do cliente é crítico. Sem feedback, validar novas ideias de negócio e
+            tomar decisões informadas sobre produtos torna-se caro e complicado, e dificulta o escalonamento de um produto.
           </p>
           <p className="text-muted-foreground leading-relaxed max-w-3xl mt-4">
-            But it doesn't stop there. We know that building prototypes early on makes a massive difference for
-            long-term success. Because of this, validation cycles are an integral part of our iterative processes.
+            Mas isso não para aqui. Sabemos que construir protótipos precocemente faz uma grande diferença para o sucesso a longo prazo. Por isso, ciclos de validação são uma parte integral de nossos processos iterativos.
           </p>
         </div>
       </div>

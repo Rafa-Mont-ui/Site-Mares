@@ -9,22 +9,22 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Extraordinário - Soluções Digitais Extraordinárias',
+  title: 'Mares - Soluções Extraordinárias',
   description: 'Ajudamos empresas a projetar, desenvolver e posicionar seus produtos como soluções formidáveis que inspiram e transformam.',
   keywords: ['design', 'desenvolvimento', 'estratégia digital', 'consultoria', 'inovação'],
-  authors: [{ name: 'Extraordinário' }],
-  creator: 'Extraordinário',
+  authors: [{ name: 'Mares' }],
+  creator: 'Mares',
   openGraph: {
     type: 'website',
     locale: 'pt_BR',
-    url: 'https://extraordinario.com',
-    title: 'Extraordinário - Soluções Digitais Extraordinárias',
+    url: 'https://mares.com',
+    title: 'Mares - Soluções Extraordinárias',
     description: 'Ajudamos empresas a projetar, desenvolver e posicionar seus produtos como soluções formidáveis que inspiram e transformam.',
-    siteName: 'Extraordinário',
+    siteName: 'Mares',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Extraordinário - Soluções Digitais Extraordinárias',
+    title: 'Mares - Soluções Extraordinárias',
     description: 'Ajudamos empresas a projetar, desenvolver e posicionar seus produtos como soluções formidáveis que inspiram e transformam.',
   },
 }

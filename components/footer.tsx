@@ -16,7 +16,15 @@ export function Footer() {
             ctaVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
           }`}
         >
-          <h2 className="text-4xl md:text-6xl font-bold mb-8 text-balance">Venha participar do Movimento MARES !</h2>
+          <h2 className="text-4xl md:text-6xl font-bold mb-8 text-balance flex items-center justify-center gap-4">
+            Venha participar do Movimento 
+            <img 
+              src="/Ativo 2.png" 
+              alt="MARES" 
+              className="h-12 md:h-16 w-auto"
+            />
+            !
+          </h2>
           <Button size="lg" className="rounded-full">
             CLIQUE AQUI
           </Button>

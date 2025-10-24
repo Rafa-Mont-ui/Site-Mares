@@ -71,11 +71,12 @@ export function Hero() {
         isLoaded ? 'bg-background/80 backdrop-blur-sm border-b border-border' : 'bg-transparent'
       }`}>
         <div className="container mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-gradient-to-br from-primary to-primary/60 rounded-full animate-pulse" />
-            <span className="font-bold text-xl text-blue-400">
-              MARES
-            </span>
+          <div className="flex items-center gap-3">
+            <img 
+              src="/Ativo 2.png" 
+              alt="MARES" 
+              className="h-8 w-auto"
+            />
           </div>
           <Button 
             variant="default" 

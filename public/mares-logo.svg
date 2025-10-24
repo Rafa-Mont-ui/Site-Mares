@@ -1,0 +1,26 @@
+<svg width="120" height="40" viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="maresGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#F5F5DC;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E6E6FA;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="120" height="40" fill="#000000"/>
+  
+  <!-- M -->
+  <path d="M8 8 L8 32 L12 32 L12 20 L20 20 L20 32 L24 32 L24 8 L20 8 L20 16 L12 16 L12 8 Z" fill="url(#maresGradient)"/>
+  
+  <!-- a -->
+  <path d="M28 24 Q28 20 32 20 Q36 20 36 24 Q36 28 32 28 Q28 28 28 24 M32 24 Q32 26 34 26 Q36 26 36 24 Q36 22 34 22 Q32 22 32 24 M32 28 L36 32" fill="url(#maresGradient)"/>
+  
+  <!-- r -->
+  <path d="M40 8 L40 32 L44 32 L44 20 Q44 16 48 16 Q52 16 52 20 L48 20 Q48 18 46 18 Q44 18 44 20 L44 8 Z" fill="url(#maresGradient)"/>
+  
+  <!-- e -->
+  <path d="M56 24 Q56 20 60 20 Q64 20 64 24 Q64 28 60 28 Q56 28 56 24 M60 24 Q60 26 62 26 Q64 26 64 24 Q64 22 62 22 Q60 22 60 24 M56 20 L64 20" fill="url(#maresGradient)"/>
+  
+  <!-- s -->
+  <path d="M68 20 Q68 16 72 16 Q76 16 76 20 Q76 22 74 22 Q72 22 72 20 Q72 18 74 18 Q76 18 76 20 Q76 24 72 24 Q68 24 68 20" fill="url(#maresGradient)"/>
+</svg>

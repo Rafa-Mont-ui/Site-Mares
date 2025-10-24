@@ -72,7 +72,7 @@ export function LoadingScreen({ onComplete }: LoadingScreenProps) {
 
         {/* Loading text with gradient */}
         <h1 className="text-2xl font-bold mb-4 bg-gradient-to-r from-primary via-primary/80 to-primary bg-clip-text text-transparent animate-pulse">
-          EXTRAORDINÁRIO
+          Teste
         </h1>
 
         {/* Progress bar */}

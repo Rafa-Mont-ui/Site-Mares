@@ -73,8 +73,8 @@ export function Hero() {
         <div className="container mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <div className="w-8 h-8 bg-gradient-to-br from-primary to-primary/60 rounded-full animate-pulse" />
-            <span className="font-bold text-xl bg-gradient-to-r from-foreground to-foreground/80 bg-clip-text text-transparent">
-              EXTRAORDINÁRIO
+            <span className="font-bold text-xl text-blue-400">
+              MARES
             </span>
           </div>
           <Button 
@@ -82,36 +82,60 @@ export function Hero() {
             size="sm" 
             className="rounded-full bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 transition-all duration-300 transform hover:scale-105"
           >
-            START A PROJECT
+            Vamos Conversar
           </Button>
         </div>
       </nav>
 
       {/* Hero Content */}
-      <div className="flex-1 flex items-center justify-center px-6 pt-24 pb-16 relative z-10">
+      <div className="flex-1 flex items-center justify-center px-6 pt-16 pb-8 relative z-10">
         <div className="container mx-auto text-center">
           <h1
             ref={animatedTitleRef}
-            className={`text-6xl md:text-8xl lg:text-9xl font-bold tracking-tight text-balance mb-8 transition-all duration-1000 ${
+            className={`text-6xl md:text-8xl lg:text-9xl font-bold tracking-tight text-balance mb-4 transition-all duration-1000 text-blue-400 ${
               titleVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
             }`}
           >
-            Construindo Soluções Digitais Extraordinárias
+            MARES
           </h1>
+          
+          {/* GIF Placeholder */}
+          <div className="mb-4 flex justify-center">
+            <div className="relative w-64 h-48 md:w-80 md:h-60 bg-gradient-to-br from-blue-100 to-blue-200 rounded-2xl overflow-hidden border-2 border-blue-300 shadow-lg">
+              {/* Placeholder content */}
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="text-center">
+                  <div className="w-16 h-16 mx-auto mb-4 bg-blue-400 rounded-full flex items-center justify-center animate-pulse">
+                    <span className="text-2xl">🎬</span>
+                  </div>
+                  <p className="text-blue-600 font-medium text-sm">GIF Placeholder</p>
+                  <p className="text-blue-500 text-xs mt-1">Pode ser alterado no futuro</p>
+                </div>
+              </div>
+              
+              {/* Animated background pattern */}
+              <div className="absolute inset-0 opacity-20">
+                <div className="absolute top-4 left-4 w-8 h-8 bg-blue-300 rounded-full animate-bounce" style={{ animationDelay: '0s' }} />
+                <div className="absolute top-8 right-6 w-6 h-6 bg-blue-400 rounded-full animate-bounce" style={{ animationDelay: '0.5s' }} />
+                <div className="absolute bottom-6 left-8 w-4 h-4 bg-blue-500 rounded-full animate-bounce" style={{ animationDelay: '1s' }} />
+                <div className="absolute bottom-4 right-4 w-10 h-10 bg-blue-300 rounded-full animate-bounce" style={{ animationDelay: '1.5s' }} />
+              </div>
+            </div>
+          </div>
           
           <p
             ref={subtitleRef}
-            className={`text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto text-balance transition-all duration-1000 delay-300 ${
+            className={`text-xl md:text-2xl text-white max-w-3xl mx-auto text-balance transition-all duration-1000 delay-300 ${
               subtitleVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
             }`}
           >
-            Ajudamos empresas a projetar, desenvolver e posicionar seus produtos como soluções formidáveis que inspiram e transformam.
+            Ajudamos empresas a projetar, desenvolver e posicionar seus profissionais com soluções formidáveis que inspiram e transformam.
           </p>
 
           {/* CTA Buttons */}
           <div
             ref={ctaRef}
-            className={`flex flex-col sm:flex-row gap-4 justify-center mt-12 transition-all duration-1000 delay-500 ${
+            className={`flex flex-col sm:flex-row gap-4 justify-center mt-6 transition-all duration-1000 delay-500 ${
               ctaVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
             }`}
           >
@@ -133,7 +157,7 @@ export function Hero() {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
+      <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 z-1">
         <div className="flex flex-col items-center gap-2 cursor-pointer group">
           <div className="w-6 h-10 border-2 border-muted-foreground/30 rounded-full flex justify-center">
             <div className="w-1 h-3 bg-primary rounded-full mt-2 animate-bounce" />

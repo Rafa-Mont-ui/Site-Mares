@@ -173,7 +173,7 @@ export function Hero() {
         <div className="flex gap-8 animate-scroll whitespace-nowrap">
           {[...Array(3)].map((_, i) => (
             <div key={i} className="flex gap-8 text-sm font-medium text-muted-foreground">
-              <span>DESIGN & UX</span>
+              <span>LIDERANÇA</span>
               <span>•</span>
               <span>DESENVOLVIMENTO</span>
               <span>•</span>

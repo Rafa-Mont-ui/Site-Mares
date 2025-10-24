@@ -62,31 +62,31 @@ export function FloatingElements() {
       size: 80,
       color: 'linear-gradient(135deg, #ff6b35, #ff8c42)',
       delay: 0,
-      position: { x: 15, y: 20 },
+      position: { x: 15, y: 10 },
     },
     {
       size: 60,
       color: 'linear-gradient(135deg, #667eea, #764ba2)',
       delay: 1,
-      position: { x: 75, y: 30 },
+      position: { x: 75, y: 15 },
     },
     {
       size: 100,
       color: 'linear-gradient(135deg, #f093fb, #f5576c)',
       delay: 2,
-      position: { x: 40, y: 60 },
+      position: { x: 40, y: 35 },
     },
     {
       size: 70,
       color: 'linear-gradient(135deg, #4facfe, #00f2fe)',
       delay: 0.5,
-      position: { x: 80, y: 70 },
+      position: { x: 80, y: 45 },
     },
     {
       size: 90,
       color: 'linear-gradient(135deg, #a8edea, #fed6e3)',
       delay: 1.5,
-      position: { x: 25, y: 75 },
+      position: { x: 25, y: 50 },
     },
   ]
 

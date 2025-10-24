@@ -88,11 +88,11 @@ export function Hero() {
       </nav>
 
       {/* Hero Content */}
-      <div className="flex-1 flex items-center justify-center px-6 pt-16 pb-8 relative z-10">
+      <div className="flex-1 flex items-center justify-center px-6 pt-8 pb-4 relative z-10">
         <div className="container mx-auto text-center">
           <h1
             ref={animatedTitleRef}
-            className={`text-6xl md:text-8xl lg:text-9xl font-bold tracking-tight text-balance mb-4 transition-all duration-1000 text-blue-400 ${
+            className={`text-6xl md:text-8xl lg:text-9xl font-bold tracking-tight text-balance mb-2 transition-all duration-1000 text-blue-400 ${
               titleVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
             }`}
           >
@@ -100,8 +100,8 @@ export function Hero() {
           </h1>
           
           {/* GIF Placeholder */}
-          <div className="mb-4 flex justify-center">
-            <div className="relative w-64 h-48 md:w-80 md:h-60 bg-gradient-to-br from-blue-100 to-blue-200 rounded-2xl overflow-hidden border-2 border-blue-300 shadow-lg">
+          <div className="mb-2 flex justify-center">
+            <div className="relative w-56 h-40 md:w-72 md:h-52 bg-gradient-to-br from-blue-100 to-blue-200 rounded-2xl overflow-hidden border-2 border-blue-300 shadow-lg">
               {/* Placeholder content */}
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="text-center">
@@ -135,7 +135,7 @@ export function Hero() {
           {/* CTA Buttons */}
           <div
             ref={ctaRef}
-            className={`flex flex-col sm:flex-row gap-4 justify-center mt-6 transition-all duration-1000 delay-500 ${
+            className={`flex flex-col sm:flex-row gap-4 justify-center mt-3 transition-all duration-1000 delay-500 ${
               ctaVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
             }`}
           >
@@ -157,7 +157,7 @@ export function Hero() {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 z-1">
+      <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 z-1">
         <div className="flex flex-col items-center gap-2 cursor-pointer group">
           <div className="w-6 h-10 border-2 border-muted-foreground/30 rounded-full flex justify-center">
             <div className="w-1 h-3 bg-primary rounded-full mt-2 animate-bounce" />

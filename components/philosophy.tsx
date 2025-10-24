@@ -14,39 +14,39 @@ export function Philosophy() {
   const values = [
     {
       icon: Lightbulb,
-      title: "Our moment",
+      title: "Nosso momento",
       description:
-        "We've worked together — a lot. We're efficient with your time and resources, and we know how to integrate with clients to deliver successful products.",
+        "Trabalhamos juntos — muito. Somos eficientes com seu tempo e recursos, e sabemos como integrar com clientes para entregar produtos bem-sucedidos.",
       ref: value1Ref,
       isVisible: value1Visible,
     },
     {
       icon: Users,
-      title: "Dedicated team",
+      title: "Equipe dedicada",
       description:
-        'In today\'s market, competition is fierce. Every detail matters, whether it\'s user-facing (UX/UI) or behind the curtain (code), we know to dot our "i"s and cross our "t"s — twice.',
+        'No mercado de hoje, a competição é feroz. Todo detalhe importa , sabemos como preencher os "i"s e cruzar os "t"s — duas vezes.',
       ref: value2Ref,
       isVisible: value2Visible,
     },
     {
       icon: Rocket,
-      title: "Our opportunity",
-      description: "We're passionate about making an impact in this world before we move to Mars.",
+      title: "Nossa oportunidade",
+      description: "Somos apaixonados por fazer uma diferença neste mundo antes de nos mudarmos para Marte.",
       ref: value3Ref,
       isVisible: value3Visible,
     },
     {
       icon: Scale,
-      title: "We compromise too",
+      title: "Compromisso",
       description:
-        "We also know that delivering an MVP or a full-blown product sometimes requires tradeoffs, and that's ok. We'll still make your product succeed.",
+        "Também sabemos que entregar um  produto completo às vezes requer tradeoffs, e isso está bem. Ainda assim, faremos seu produto ter sucesso.",
       ref: value4Ref,
       isVisible: value4Visible,
     },
     {
       icon: Heart,
-      title: "Doing what we love",
-      description: "We love what we do, and it shows in every project we deliver. Passion drives quality.",
+        title: "Fazendo o que amamos",
+      description: "Amaimos o que fazemos, e isso mostra em cada projeto que entregamos. A paixão impulsiona a qualidade.",
       ref: value5Ref,
       isVisible: value5Visible,
     },
@@ -61,7 +61,7 @@ export function Philosophy() {
             titleVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
           }`}
         >
-          How we think
+          Como pensamos
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {values.map((value, index) => {

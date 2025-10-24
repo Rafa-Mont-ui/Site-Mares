@@ -11,20 +11,24 @@ export function LoadingScreen({ onComplete }: LoadingScreenProps) {
   const [progress, setProgress] = useState(0)
 
   useEffect(() => {
-    // Simulate loading progress
+    // Simulate loading progress over 10 seconds
+    const startTime = Date.now()
+    const duration = 10000 // 10 seconds
+    
     const interval = setInterval(() => {
-      setProgress((prev) => {
-        if (prev >= 100) {
-          clearInterval(interval)
-          setTimeout(() => {
-            setIsVisible(false)
-            onComplete?.()
-          }, 500)
-          return 100
-        }
-        return prev + Math.random() * 15
-      })
-    }, 100)
+      const elapsed = Date.now() - startTime
+      const progressPercent = Math.min((elapsed / duration) * 100, 100)
+      
+      setProgress(progressPercent)
+      
+      if (progressPercent >= 100) {
+        clearInterval(interval)
+        setTimeout(() => {
+          setIsVisible(false)
+          onComplete?.()
+        }, 500)
+      }
+    }, 50) // Update every 50ms for smooth progress
 
     return () => clearInterval(interval)
   }, [onComplete])
@@ -72,7 +76,7 @@ export function LoadingScreen({ onComplete }: LoadingScreenProps) {
 
         {/* Loading text with gradient */}
         <h1 className="text-2xl font-bold mb-4 bg-gradient-to-r from-primary via-primary/80 to-primary bg-clip-text text-transparent animate-pulse">
-          Teste
+          MARES
         </h1>
 
         {/* Progress bar */}

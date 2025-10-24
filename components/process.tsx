@@ -71,7 +71,7 @@ export function Process() {
             <span className="text-xs font-bold text-muted-foreground">→</span>
             <span className="text-xs font-bold text-muted-foreground">Solução</span>
           </div>
-          <h3 className="text-3xl font-bold mb-6">FAST CYCLES</h3>
+          <h3 className="text-3xl font-bold mb-6">Ciclos rápidos</h3>
           <p className="text-muted-foreground leading-relaxed max-w-3xl">
             Obter feedback precoce do usuário e do cliente é crítico. Sem feedback, validar novas ideias de negócio e
             tomar decisões informadas sobre produtos torna-se caro e complicado, e dificulta o escalonamento de um produto.

@@ -157,7 +157,7 @@ export function Hero() {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 z-1">
+      <div className="absolute bottom-16 left-1/2 transform -translate-x-1/2 z-1">
         <div className="flex flex-col items-center gap-2 cursor-pointer group">
           <div className="w-6 h-10 border-2 border-muted-foreground/30 rounded-full flex justify-center">
             <div className="w-1 h-3 bg-primary rounded-full mt-2 animate-bounce" />

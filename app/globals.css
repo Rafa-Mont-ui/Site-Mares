@@ -121,6 +121,10 @@
   }
   body {
     @apply bg-background text-foreground;
+    background-image: url('/fundo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
 

@@ -6,6 +6,8 @@ import { useParallax } from "@/hooks/use-parallax"
 import { useTextAnimation } from "@/hooks/use-text-animation"
 import { FloatingElements } from "@/components/floating-elements"
 import { useState, useEffect } from "react"
+import { Switch } from "@/components/ui/switch"
+import { useTheme } from "next-themes"
 
 export function Hero() {
   const [isLoaded, setIsLoaded] = useState(false)
@@ -28,6 +30,8 @@ export function Hero() {
     stagger: 0.1,
     effect: 'split'
   })
+
+  const { theme, setTheme } = useTheme();
 
   useEffect(() => {
     const timer = setTimeout(() => setIsLoaded(true), 100)
@@ -78,13 +82,20 @@ export function Hero() {
               className="h-8 w-auto"
             />
           </div>
-          <Button 
-            variant="default" 
-            size="sm" 
-            className="rounded-full bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 transition-all duration-300 transform hover:scale-105"
-          >
-            Vamos Conversar
-          </Button>
+          <div className="flex items-center gap-4">
+            <Switch
+              checked={theme === "dark"}
+              onCheckedChange={checked => setTheme(checked ? "dark" : "light")}
+              aria-label="Alternar modo escuro/claro"
+            />
+            <Button 
+              variant="default" 
+              size="sm" 
+              className="rounded-full bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 transition-all duration-300 transform hover:scale-105"
+            >
+              Vamos Conversar
+            </Button>
+          </div>
         </div>
       </nav>
 
